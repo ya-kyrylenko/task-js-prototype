@@ -17,6 +17,9 @@ CatMonster.prototype = Object.create(Monster.prototype);
 CatMonster.prototype.damage = 5;
 CatMonster.prototype.hp = 50;
 CatMonster.prototype.nowHP= 50;
+CatMonster.prototype.scratch = function(Obj){
+	this.bump(Obj)
+};
 // А можна так, для кожного окрему.
 /*
 CatMonster.prototype.scratch = function(Obj){
@@ -29,6 +32,9 @@ BirdMonster.prototype = Object.create(Monster.prototype);
 BirdMonster.prototype.damage = 3;
 BirdMonster.prototype.hp = 60;
 BirdMonster.prototype.nowHP= 60;
+BirdMonster.prototype.peck = function(Obj){
+	this.bump(Obj)
+};
 // А можна так, для кожного окрему.
 /*
 BirdMonster.prototype.peck = function(Obj){
